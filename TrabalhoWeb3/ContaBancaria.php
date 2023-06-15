@@ -44,19 +44,15 @@ class ContaCorrente {
 
 // Testando a classe ContaCorrente
 
-// Criando duas contas correntes
-$conta1 = new ContaCorrente("João", "001", "123456");
-$conta2 = new ContaCorrente("Maria", "002", "654321");
+$conta1 = new ContaCorrente("Bruno", "001", "123456");
+$conta2 = new ContaCorrente("Michelli", "002", "654321");
 
-// Verificando saldos iniciais
 echo "Saldo inicial conta 1: {$conta1->getSaldo()} <br>";
 echo "Saldo inicial conta 2: {$conta2->getSaldo()} <br>";
 
-// Realizando operações
 $conta1->depositar(1000);
 $conta1->sacar(500);
 $conta1->transferir(300, $conta2);
 
-// Verificando saldos após as operações
-echo "Saldo atual conta 1: {$conta1->getSaldo()} <br>";
-echo "Saldo atual conta 2: {$conta2->getSaldo()} <br>";
+echo "Saldo atual conta 1 : {$conta1->getSaldo()} <br>";
+echo "Saldo atual conta 2 : {$conta2->getSaldo()} <br>";
